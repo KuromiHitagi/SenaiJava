@@ -20,6 +20,7 @@ public class Main {
         System.out.println("[1]. Switch, Case e Default");
         System.out.println("[2]. Doação");
         System.out.println("[3]. Calçado");
+        System.out.println("[4]. Acionador");
 
         return Read.nextLine();
     }
@@ -32,8 +33,56 @@ public class Main {
             criancaEsperanca(read);
         } else if(escolhaF.equals("calcado") || escolhaF.equals("3")) {
             calcado(read);
+        } else if(escolhaF.equals("acionador") || escolhaF.equals("4")) {
+            acionador(read);
         }
 
+    }
+
+    /// Função que gera a Aula 4
+    public static void acionador(Scanner read) {
+        limparConsole();
+
+        String btn, escolha;
+
+        System.out.println("Ligue o equipamento: [on]");
+        btn = read.nextLine();
+
+        while(btn.equalsIgnoreCase("on")) {
+            System.out.println("Equipamento ligado com sucesso!!");
+            System.out.println("\nEscolha a lâmpada que deseja ligar: \n" +
+                    "[1]. Lâmpada Azul\n" +
+                    "[2]. Lâmpada Verde\n" +
+                    "[3]. Lâmpada Amarela\n" +
+                    "[4]. Lâmpada Vermelha");
+
+            escolha = read.nextLine();
+
+            String escolhaF = formatarTexto(escolha);
+
+            switch (escolhaF) {
+                case "1", "lampada azul", "azul":
+                    System.out.println("Lâmpada Azul Ligada!!");
+                    break;
+                case "2", "lampada verde", "verde":
+                    System.out.println("Lâmpada Verde Ligada!!");
+                    break;
+                case "3", "lampada amarela", "amarela":
+                    System.out.println("Lâmpada Amarela Ligada!!");
+                    break;
+                case "4", "lampada vermelha", "vermelha":
+                    System.out.println("Lâmpada Vermelha Ligada!!");
+                    break;
+                default:
+                    System.out.println("Cor não disponível ou digitada errada!");
+                    break;
+            }
+
+            System.out.println("Desligue o equipamento [off] ou continue [on] ");
+            btn = read.nextLine();
+
+            limparConsole();
+        }
     }
 
     /// Função que gera a Aula 3
