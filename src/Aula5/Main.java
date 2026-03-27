@@ -1,6 +1,6 @@
 package Aula5;
 import java.util.Scanner;
-import java.text.Normalizer;;
+import java.text.Normalizer;
 
 public class Main {
     public static void main(String[] args) {
