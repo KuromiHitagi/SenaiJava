@@ -202,7 +202,6 @@ public class Main {
             System.out.println("...?");
             confirm = sc.nextLine();
         } while(!confirm.equalsIgnoreCase("f"));
-
     }
 
     public static void HTML() {
