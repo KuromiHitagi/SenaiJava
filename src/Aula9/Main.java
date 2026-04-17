@@ -23,6 +23,7 @@ public class Main {
     public static String menu(Scanner sc) {
         System.out.println("=== Aula 9 - manipulação de Arquivos ===");
         System.out.println("[1]. Vendas");
+        System.out.println("[2]. Locadora");
         System.out.println("[0]. Sair");
         System.out.println("\nDigite o que deseja: ");
         String escolha = sc.nextLine();
@@ -36,6 +37,9 @@ public class Main {
                 vendas(sc);
                 break;
 
+            case "2", "locadora":
+                locadora.locadora(new String[]{});
+
             case "kill":
                 kill(sc);
                 break;
@@ -43,6 +47,8 @@ public class Main {
     }
 
     public static void vendas(Scanner sc) {
+        limpar();
+
         System.out.println("Digite o nome do arquivo: ");
         String arquivoEntrada = (sc.nextLine() + ".csv");
         //String arquivoEntrada = "vendas.csv";
