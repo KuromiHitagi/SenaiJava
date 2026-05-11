@@ -1,5 +1,6 @@
 package Aula11.Banco;
 
+/*
 public class Cliente {
     protected String nome;
     protected String cpf;
@@ -17,3 +18,4 @@ public class Cliente {
         return this.cpf;
     }
 }
+*/
