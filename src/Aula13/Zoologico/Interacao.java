@@ -1,5 +1,6 @@
 package Aula13.Zoologico;
 
+/*
 import java.util.Scanner;
 
 public class Interacao {
@@ -33,3 +34,4 @@ public class Interacao {
         }
     }
 }
+*/
